@@ -1,16 +1,131 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Webpage layout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5F5;
+            width: 100%;
 
-<html>
+        }
+      .header {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        border: 1px solid black;
+        background-color: #011e29;
+        color: white;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        font-size: large;
+      }
+      .container{
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        background-color: #F5F5F5;
+      }
+      h3{
+        text-align: center;
+      }
+      .latest-news-section{
+        margin: 10px;
+        width: 15%;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      ul{
+        display: inline-block;
+        text-align: center;
+      }
+      .Main-Articl{
+        margin: 10px;
+        width: 55%;
+        height: 600px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+        
+      }
+      h2{
+        text-align: center;
+      }
+      .pictorial-news-section{
+        margin: 10px;
+        width: 28%;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+      }
+      img{
+        margin-top: 5px;
+        width: 300px;
+        height: 200px;
+        text-align: center;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    </style>
+  </head>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+  <body>
+    <div class="header">
+      <h1>Shaw's News</h1>
+    </div>
+    <div class="container">
+      <div class="latest-news-section">
+        <h3>Latest News Articles</h3>
+        <ul>
+          <li>Article 1</li>
+          <li>Article 2</li>
+          <li>Article 3</li>
+        </ul>
+      </div>
+      <div class="Main-Articl">
+        <h2>Main Article</h2>
+        <h4>
+          Freezing of Congress accounts by Income Tax department routine
+          procedure, sources say
+        </h4>
+        <p>
+          Sources say the accounts were only frozen up to ₹115 crore, contrary
+          to the Congress claim that the action affects all its political
+          activities; action based on unpaid claims from assessment year 2018-19
+          The Income Tax department’s action, freezing the Congress’ main bank
+          accounts, was part of its “routine procedure” against defaulters,
+          carried out in connection to claims for the tax assessment year
+          2018-19, according to sources close to the government. Alleging
+          partisan politics, the Opposition party claimed that its accounts had
+          been frozen on “flimsy grounds”. The freezing of its accounts “has
+          affected all political activity” of the party barely weeks before
+          general elections are announced, Congress Ajay Maken said. However,
+          sources close to the government said that the freezing of accounts was
+          only up to ₹115 crore, adding that the Congress was free to undertake
+          other banking activities.
+        </p>
+      </div>
+      <div class="pictorial-news-section">
+        <h3>Pictorial News</h3>
+        <img
+          src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg"
+          alt="Image-one"
+        />
+        <img
+          src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG"
+          alt="Image-two"
+        />
+        <img
+          src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG"
+          alt="Image-three"
+        />
+      </div>
+    </div>
+  </body>
 </html>
